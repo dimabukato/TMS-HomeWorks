@@ -6,7 +6,7 @@
         {
             Console.Write("First number: ");
             string firstNumber = Console.ReadLine();
-            Console.WriteLine("Second number: ");
+            Console.Write("Second number: ");
             string secondNumber = Console.ReadLine();
             if (double.TryParse(firstNumber, out double firstNum)) 
             {
@@ -17,35 +17,35 @@
                     {
                         case "+":
                             
-                            Console.WriteLine($"Your result is:{firstNum + secondNum}");
+                            Console.WriteLine($"Your result:{firstNum + secondNum}");
                             break;
 
                         case "-":
-                            Console.WriteLine($"Your result is:{firstNum - secondNum}");
+                            Console.WriteLine($"Your result:{firstNum - secondNum}");
                             break;
 
                         case "*":
-                            Console.WriteLine($"Your result is:{firstNum * secondNum}");
+                            Console.WriteLine($"Your result:{firstNum * secondNum}");
                             break;
 
                         case "/":
-                            Console.WriteLine($"Your result is:{firstNum / secondNum}");
+                            Console.WriteLine($"Your result:{firstNum / secondNum}");
                             break;
 
                         case "%":
-                            Console.WriteLine($"Your result is:{firstNum % secondNum}");
+                            Console.WriteLine($"Your result:{firstNum % secondNum}");
                             break;
 
                         default:
-                            Console.WriteLine("Unknown operaion, please try again");
+                            Console.WriteLine("Unknown operaion");
                             break;
                     }
                 }
                 else
-                Console.WriteLine("Input data must be numbers");
+                Console.WriteLine("Unknown operaion");
             }
             else 
-            Console.WriteLine("Input data must be numbers");
+            Console.WriteLine("Unknown operaion");
         }
     }
 }
